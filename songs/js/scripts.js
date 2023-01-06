@@ -2,8 +2,11 @@ window.onload = function(){
     videos();
 
   }
-const og_videos = ['godsnotdead.mp4', 'keepmeinthemoment.mp4']
-let myVideos = ['godsnotdead.mp4', 'keepmeinthemoment.mp4']
+const og_videos = ['godsnotdead.mp4']
+let myVideos = ['godsnotdead.mp4']
+for (let i= 0; i < 20; i++){
+    myVideos.push(`song_${i}.mp4`)
+}
 let test = []
 let ari = 0
 let james = 0
@@ -11,7 +14,7 @@ let james = 0
 
 function videos() {
 
-
+    console.log(myVideos)
 
     $(".video-container").empty()
 
